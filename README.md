@@ -24,9 +24,9 @@ background.js init 1535806526637 background.js:1:1
 
 # When new tab is opened:
 content.js init 1535806535428 content.js:3:1
-background.js got message via browser.runtime.onMessage hello from content.js via browser.runtime.sendMessage 1535806535503 background.js:5:3
+background.js got message via browser.runtime.onMessage: hello from content.js via browser.runtime.sendMessage 1535806535503 background.js:5:3
 background.js connected 1535806535512 background.js:10:3
-background.js got message hello from content.js via port 1535806535513 background.js:13:5 
+background.js got message hello from content.js via port: 1535806535513 background.js:13:5 
 ```
 
 Expected logs (all messages go through as expected):
@@ -35,15 +35,15 @@ Expected logs (all messages go through as expected):
 # At startup:
 content.js init 1535806526557 content.js:3:1
 background.js init 1535806526637 background.js:1:1
-background.js got message via browser.runtime.onMessage hello from content.js via browser.runtime.sendMessage 1535806535503 background.js:5:3
+background.js got message via browser.runtime.onMessage: hello from content.js via browser.runtime.sendMessage 1535806535503 background.js:5:3
 background.js connected 1535806535512 background.js:10:3
-background.js got message hello from content.js via port 1535806535513 background.js:13:5 
+background.js got message hello from content.js via port: 1535806535513 background.js:13:5 
 
 # When new tab is opened:
 content.js init 1535806535428 content.js:3:1
-background.js got message via browser.runtime.onMessage hello from content.js via browser.runtime.sendMessage 1535806535503 background.js:5:3
+background.js got message via browser.runtime.onMessage: hello from content.js via browser.runtime.sendMessage 1535806535503 background.js:5:3
 background.js connected 1535806535512 background.js:10:3
-background.js got message hello from content.js via port 1535806535513 background.js:13:5 
+background.js got message hello from content.js via port: 1535806535513 background.js:13:5 
 ```
 
 (Whether “content.js init” or “background.js init” is logged first doesn’t matter to me as long as the messaging works.)
