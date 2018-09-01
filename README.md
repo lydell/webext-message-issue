@@ -46,6 +46,8 @@ background.js connected 1535806535512 background.js:10:3
 background.js got message hello from content.js via port 1535806535513 background.js:13:5 
 ```
 
+(Whether “content.js init” or “background.js init” is logged first doesn’t matter to me as long as the messaging works.)
+
 The thing here is that there are essentially two types of tabs:
 
 - Those opened _before_ background.js is run,
