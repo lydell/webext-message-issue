@@ -1,6 +1,6 @@
 console.log("background.js init", Date.now());
 
-// This message is successfully received.
+// This message is never received.
 browser.runtime.onMessage.addListener(message => {
   console.log("background.js got message via browser.runtime.onMessage:", message, Date.now());
 })
